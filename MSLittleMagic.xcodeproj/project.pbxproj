@@ -13,6 +13,8 @@
 		D39113771A2F4BDE002014D2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D39113701A2F4BDE002014D2 /* main.m */; };
 		D39113781A2F4BDE002014D2 /* MSPair.m in Sources */ = {isa = PBXBuildFile; fileRef = D39113731A2F4BDE002014D2 /* MSPair.m */; };
 		D391137A1A2F4C0A002014D2 /* MSPairTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D39113791A2F4C0A002014D2 /* MSPairTests.m */; };
+		D39B87111A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D39B87101A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m */; };
+		D39B87131A2F5C9900FC0D39 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39B87121A2F5C9900FC0D39 /* Storyboard.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +39,10 @@
 		D39113721A2F4BDE002014D2 /* MSPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSPair.h; sourceTree = "<group>"; };
 		D39113731A2F4BDE002014D2 /* MSPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPair.m; sourceTree = "<group>"; };
 		D39113791A2F4C0A002014D2 /* MSPairTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSPairTests.m; sourceTree = "<group>"; };
+		D39B870F1A2F5B3200FC0D39 /* MSReplaceNavigationSegue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSReplaceNavigationSegue.h; sourceTree = "<group>"; };
+		D39B87101A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSReplaceNavigationSegue.m; sourceTree = "<group>"; };
+		D39B87121A2F5C9900FC0D39 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		D39B87151A2F5E6A00FC0D39 /* MSLittleMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLittleMagic.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +107,7 @@
 				D391136E1A2F4BDE002014D2 /* Images.xcassets */,
 				D391136F1A2F4BDE002014D2 /* Info.plist */,
 				D39113701A2F4BDE002014D2 /* main.m */,
+				D39B87121A2F5C9900FC0D39 /* Storyboard.storyboard */,
 			);
 			path = Example;
 			sourceTree = "<group>";
@@ -110,6 +117,9 @@
 			children = (
 				D39113721A2F4BDE002014D2 /* MSPair.h */,
 				D39113731A2F4BDE002014D2 /* MSPair.m */,
+				D39B870F1A2F5B3200FC0D39 /* MSReplaceNavigationSegue.h */,
+				D39B87101A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m */,
+				D39B87151A2F5E6A00FC0D39 /* MSLittleMagic.h */,
 			);
 			path = MSLittleMagic;
 			sourceTree = "<group>";
@@ -196,6 +206,7 @@
 			files = (
 				D39113761A2F4BDE002014D2 /* Info.plist in Resources */,
 				D39113751A2F4BDE002014D2 /* Images.xcassets in Resources */,
+				D39B87131A2F5C9900FC0D39 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,6 +226,7 @@
 			files = (
 				D39113771A2F4BDE002014D2 /* main.m in Sources */,
 				D39113741A2F4BDE002014D2 /* AppDelegate.m in Sources */,
+				D39B87111A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m in Sources */,
 				D39113781A2F4BDE002014D2 /* MSPair.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
