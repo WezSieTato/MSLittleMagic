@@ -16,4 +16,16 @@
 -(instancetype)initWithFirst:(id)first andSecond:(id)second;
 +(instancetype)pairWithFirst:(id)first andSecond:(id)second;
 
+/**
+ *  Init object with values from array
+ *  first = array[0]
+ *  second = array[1]
+ *
+ *  @param array with values
+ *
+ *  @return Initialized object if array have 2 objects or more
+ */
+-(instancetype)initWithArray:(NSArray*)array;
++(instancetype)pairWithArray:(NSArray*)array;
+
 @end

@@ -24,4 +24,18 @@
     return [[self alloc] initWithFirst:first andSecond:second];
 }
 
+-(instancetype)initWithArray:(NSArray *)array{
+    self = [super init];
+    if(self && [array count] >= 2){
+        self.first = [array firstObject];
+        self.second = [array objectAtIndex:1];
+    }
+    
+    return self;
+}
+
++(instancetype)pairWithArray:(NSArray *)array{
+    return [[self alloc] initWithArray:array];
+}
+
 @end
