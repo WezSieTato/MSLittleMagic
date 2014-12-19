@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'MSLittleMagic'
-  spec.version = '0.0.3'
+  spec.version = '0.0.4'
   spec.authors = { 'Marcin Stepnowski' => 'le0n.uo@gmail.com' }
   spec.homepage = 'https://github.com/WezSieTato/MSLittleMagic'
   spec.summary = 'Some class that you can find in other languages but not in Objective-C'

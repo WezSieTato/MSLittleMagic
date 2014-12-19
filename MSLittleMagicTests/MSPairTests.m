@@ -67,4 +67,31 @@
 
 }
 
+-(void)testDictionaryAddPair{
+    NSMutableDictionary* mutDick = [NSMutableDictionary new];
+    
+    [mutDick addObjectFromPair:[MSPair pairWithArray:@[@"first", @2]]];
+    [mutDick addObjectFromPair:[MSPair pairWithArray:@[@"second", @"siema"]]];
+    
+    NSDictionary* result = @{
+                             @"first" : @2,
+                             @"second" : @"siema"
+                             };
+    
+    XCTAssertEqualObjects([mutDick copy], result);
+}
+
+-(void)testDictionaryPairArray{
+    NSDictionary* dict = @{
+                             @"first" : @2,
+                             @"second" : @"siema"
+                             };
+    NSArray* result = @[
+                        [MSPair pairWithArray:@[@"first", @2]],
+                        [MSPair pairWithArray:@[@"second", @"siema"]]
+                        ];
+    
+    XCTAssertEqualObjects(dict.pairArray, result);
+}
+
 @end

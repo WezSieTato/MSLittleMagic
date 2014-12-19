@@ -44,8 +44,7 @@
 #pragma mark - Properties
 
 -(NSArray*)valueArray{
-    NSArray* arr = [NSArray arrayWithObjects:self.first, self.second, nil];
-    return arr;
+    return @[self.first, self.second];
 }
 
 #pragma mark - Public methods

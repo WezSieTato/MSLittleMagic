@@ -15,6 +15,8 @@
 		D391137A1A2F4C0A002014D2 /* MSPairTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D39113791A2F4C0A002014D2 /* MSPairTests.m */; };
 		D39B87111A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m in Sources */ = {isa = PBXBuildFile; fileRef = D39B87101A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m */; };
 		D39B87131A2F5C9900FC0D39 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D39B87121A2F5C9900FC0D39 /* Storyboard.storyboard */; };
+		D3A147FE1A447186006082FC /* NSDictionary+MSPair.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A147FD1A447186006082FC /* NSDictionary+MSPair.m */; };
+		D3A148011A4478CD006082FC /* NSMutableDictionary+MSPair.m in Sources */ = {isa = PBXBuildFile; fileRef = D3A148001A4478CD006082FC /* NSMutableDictionary+MSPair.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +45,10 @@
 		D39B87101A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MSReplaceNavigationSegue.m; sourceTree = "<group>"; };
 		D39B87121A2F5C9900FC0D39 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
 		D39B87151A2F5E6A00FC0D39 /* MSLittleMagic.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MSLittleMagic.h; sourceTree = "<group>"; };
+		D3A147FC1A447186006082FC /* NSDictionary+MSPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+MSPair.h"; sourceTree = "<group>"; };
+		D3A147FD1A447186006082FC /* NSDictionary+MSPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+MSPair.m"; sourceTree = "<group>"; };
+		D3A147FF1A4478CD006082FC /* NSMutableDictionary+MSPair.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+MSPair.h"; sourceTree = "<group>"; };
+		D3A148001A4478CD006082FC /* NSMutableDictionary+MSPair.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+MSPair.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,11 +121,15 @@
 		D39113711A2F4BDE002014D2 /* MSLittleMagic */ = {
 			isa = PBXGroup;
 			children = (
+				D39B87151A2F5E6A00FC0D39 /* MSLittleMagic.h */,
 				D39113721A2F4BDE002014D2 /* MSPair.h */,
 				D39113731A2F4BDE002014D2 /* MSPair.m */,
+				D3A147FC1A447186006082FC /* NSDictionary+MSPair.h */,
+				D3A147FD1A447186006082FC /* NSDictionary+MSPair.m */,
+				D3A147FF1A4478CD006082FC /* NSMutableDictionary+MSPair.h */,
+				D3A148001A4478CD006082FC /* NSMutableDictionary+MSPair.m */,
 				D39B870F1A2F5B3200FC0D39 /* MSReplaceNavigationSegue.h */,
 				D39B87101A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m */,
-				D39B87151A2F5E6A00FC0D39 /* MSLittleMagic.h */,
 			);
 			path = MSLittleMagic;
 			sourceTree = "<group>";
@@ -226,6 +236,8 @@
 			files = (
 				D39113771A2F4BDE002014D2 /* main.m in Sources */,
 				D39113741A2F4BDE002014D2 /* AppDelegate.m in Sources */,
+				D3A147FE1A447186006082FC /* NSDictionary+MSPair.m in Sources */,
+				D3A148011A4478CD006082FC /* NSMutableDictionary+MSPair.m in Sources */,
 				D39B87111A2F5B3200FC0D39 /* MSReplaceNavigationSegue.m in Sources */,
 				D39113781A2F4BDE002014D2 /* MSPair.m in Sources */,
 			);
