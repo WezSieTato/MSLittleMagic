@@ -10,6 +10,8 @@
 
 @implementation MSPair
 
+#pragma mark - Creation
+
 -(instancetype)initWithFirst:(id)first andSecond:(id)second{
     self = [super init];
     if(self){
@@ -36,6 +38,53 @@
 
 +(instancetype)pairWithArray:(NSArray *)array{
     return [[self alloc] initWithArray:array];
+}
+
+
+#pragma mark - Properties
+
+-(NSArray*)valueArray{
+    NSArray* arr = [NSArray arrayWithObjects:self.first, self.second, nil];
+    return arr;
+}
+
+#pragma mark - Public methods
+
+-(BOOL)isEqualToPair:(MSPair *)other{
+    if (other == self) {
+        return YES;
+    } else if( [other isKindOfClass:[MSPair class]]){
+        MSPair* otherPair = (MSPair*)other;
+        BOOL firstResult = [self.first isEqual:otherPair.first];
+        BOOL secondResult = [self.second isEqual:otherPair.second];
+        return firstResult && secondResult;
+    }
+    
+    return NO;
+}
+
+#pragma mark - NSObject method
+
+-(NSString*)description{
+    return [NSString stringWithFormat:@"First: %@\nSecond: %@", [self.first description], [self.second description]];
+}
+
+- (BOOL)isEqual:(id)other
+{
+    if (other == self) {
+        return YES;
+//    } else if (![super isEqual:other]) {
+//        return NO;
+    } else if( [other isKindOfClass:[MSPair class]]){
+        return [self isEqualToPair:(MSPair *)other];
+    }
+    
+    return NO;
+}
+
+- (NSUInteger)hash
+{
+    return [self.second hash] - (NSUInteger)self.first + [self.first hash] + (NSUInteger)self.second;
 }
 
 @end

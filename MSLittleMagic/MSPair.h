@@ -13,6 +13,8 @@
 @property (strong) id first;
 @property (strong) id second;
 
+@property (nonatomic, readonly) NSArray* valueArray;
+
 -(instancetype)initWithFirst:(id)first andSecond:(id)second;
 +(instancetype)pairWithFirst:(id)first andSecond:(id)second;
 
@@ -27,5 +29,7 @@
  */
 -(instancetype)initWithArray:(NSArray*)array;
 +(instancetype)pairWithArray:(NSArray*)array;
+
+-(BOOL)isEqualToPair:(MSPair*)other;
 
 @end
