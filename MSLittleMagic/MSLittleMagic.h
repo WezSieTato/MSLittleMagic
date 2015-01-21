@@ -10,7 +10,9 @@
 #define MSLittleMagic_MSLittleMagic_h
 
 #import "MSPair.h"
-#import "MSReplaceNavigationSegue.h"
 
+#if TARGET_OS_IPHONE
+    #import "MSReplaceNavigationSegue.h"
+#endif
 
 #endif

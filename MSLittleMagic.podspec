@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name = 'MSLittleMagic'
-  spec.version = '0.0.4'
+  spec.version = '0.1'
   spec.authors = { 'Marcin Stepnowski' => 'le0n.uo@gmail.com' }
   spec.homepage = 'https://github.com/WezSieTato/MSLittleMagic'
   spec.summary = 'Some class that you can find in other languages but not in Objective-C'
@@ -10,7 +10,9 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
 
   spec.ios.frameworks = 'Foundation', 'UIKit'
-  spec.ios.source_files = 'MSLittleMagic/*.{h,m}'
+  spec.osx.frameworks = 'Foundation'
+
+  spec.ios.source_files = 'MSLittleMagic/*.{h,m}', 'MSLittleMagic/UI/*.{h,m}'
 
   spec.osx.source_files = 'MSLittleMagic/*.{h,m}'
 end
